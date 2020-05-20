@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom'
 import Greeting from './Greeting'
 import './index.css'
 
+const thankUser = () => alert('Thanks for using react-boilerplate!')
+
 const App = () => (
     <div className="App">
         <Greeting firstName="John" lastName="Doe" />
-        <small>react-boilerplate</small>
+        <button className="CustomButton" onClick={thankUser}>
+            Click me...
+        </button>
     </div>
 )
 
