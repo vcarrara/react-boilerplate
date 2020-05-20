@@ -9,10 +9,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: `${__dirname}/dist`,
-    },
-    optimization: {
-        minimizer: [new UglifyJsPlugin()],
-    },
+    },    
     devServer: {
         historyApiFallback: true,
         port: 3000,
@@ -41,7 +38,14 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: ['file-loader'],
+            },
         ],
+    },
+    optimization: {
+        minimizer: [new UglifyJsPlugin()],
     },
     plugins: [
         new HtmlWebPackPlugin({
