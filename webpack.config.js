@@ -9,7 +9,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: `${__dirname}/dist`,
-    },    
+    },
     devServer: {
         historyApiFallback: true,
         port: 3000,
@@ -43,6 +43,9 @@ module.exports = {
                 use: ['file-loader'],
             },
         ],
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'],
     },
     optimization: {
         minimizer: [new UglifyJsPlugin()],
