@@ -12,6 +12,10 @@ module.exports = {
     optimization: {
         minimizer: [new UglifyJsPlugin()],
     },
+    devServer: {
+        historyApiFallback: true,
+        port: 3000,
+    },
     module: {
         rules: [
             {
