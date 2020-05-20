@@ -23,14 +23,17 @@ module.exports = {
             },
             {
                 test: /\.html$/i,
+                exclude: /node_modules/,
                 use: ['html-loader'],
             },
             {
                 test: /\.css$/i,
+                exclude: /node_modules/,
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
+                exclude: /node_modules/,
                 use: ['file-loader'],
             },
         ],
