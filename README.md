@@ -21,13 +21,14 @@ Lancer la commande `npm run build` afin de créer les fichiers de sortie.
 
 # Paramétrage
 
-## Modification du fichier de sortie
+## Modification des fichiers d'entrée et de sortie
 
 Par défaut, le fichier de sortie est appelé `react-boilerplate` et est localisé dans le dossier `dist/`. Ces paramètres peuvent être modifiés dans le fichier `webpack.config.js`.
 
 ```javascript
 module.exports = {
     entry: {
+        // '<nom du fichier de sortie>': '<chemin vers le fichier d'entrée>'
         'react-boilerplate': './src/index.js',
     },
     output: {
