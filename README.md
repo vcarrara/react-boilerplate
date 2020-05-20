@@ -35,3 +35,18 @@ module.exports = {
     // ...
 }
 ```
+
+# Modification du port du serveur de développement
+
+Le port peut être modifié dans le fichier `webpack.config.js`
+
+```javascript
+module.exports = {
+    // ...
+    devServer: {
+        historyApiFallback: true,
+        port: 3000,
+    },
+    // ...
+}
+```
