@@ -19,7 +19,9 @@ Lancer la commande `npm start` pour démarrer le serveur de développement.
 
 Lancer la commande `npm run build` afin de créer les fichiers de sortie.
 
-# Modification du fichier de sortie
+# Paramétrage
+
+## Modification du fichier de sortie
 
 Par défaut, le fichier de sortie est appelé `react-boilerplate` et est localisé dans le dossier `dist/`. Ces paramètres peuvent être modifiés dans le fichier `webpack.config.js`.
 
@@ -36,7 +38,7 @@ module.exports = {
 }
 ```
 
-# Modification du port du serveur de développement
+## Modification du port du serveur de développement
 
 Le port peut être modifié dans le fichier `webpack.config.js`
 
