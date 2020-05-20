@@ -1,7 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
+import Greeting from './Greeting'
 import './index.css'
 
-const MyComponent = () => <h1>Hello from react-boilerplate!</h1>
+const App = () => (
+    <>
+        <Greeting firstName="John" lastName="Doe" />
+        <small>react-boilerplate</small>
+    </>
+)
 
-ReactDOM.render(<MyComponent />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
