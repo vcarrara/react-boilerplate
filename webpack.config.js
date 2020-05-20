@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const autoprefixer = require('autoprefixer')
 
 module.exports = {
     entry: {
