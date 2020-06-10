@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Greeting from './Greeting'
 import './index.css'
-import ''
 
 const thankUser = () => alert('Thanks for using react-boilerplate!')
 
