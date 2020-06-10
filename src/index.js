@@ -5,6 +5,8 @@ import './index.css'
 
 const thankUser = () => alert('Thanks for using react-boilerplate!')
 
+aaa
+
 const App = () => (
     <div className="App">
         <Greeting firstName="John" lastName="Doe" />
