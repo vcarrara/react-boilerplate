@@ -12,15 +12,21 @@ react-boilerplate nécessite **Node.js** et **npm** (ou yarn) afin de fonctionne
 
 ## How to use
 
-`git clone https://github.com/vcarrara/react-boilerplate.git <my-package-name>`
-`cd <my-package-name>`
+```
+git clone https://github.com/vcarrara/react-boilerplate.git <my-package-name>
+cd <my-package-name>
+```
 
 ## Changement de remote
 
-`git remote rename origin react-boilerplate`
-`git remote add origin <repo>`
+```
+git remote rename origin react-boilerplate
+git remote add origin <repo>
+```
 ou
-`git remote set-url origin <repo>`
+```
+git remote set-url origin <repo>
+```
 
 ## Installation des dépendances.
 
