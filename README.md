@@ -17,7 +17,7 @@ git clone https://github.com/vcarrara/react-boilerplate.git <my-package-name>
 cd <my-package-name>
 ```
 
-## Changement de remote
+### Changement de remote
 
 ```
 git remote rename origin react-boilerplate
@@ -32,11 +32,11 @@ git remote set-url origin <repo>
 
 Lancer la commande `npm install` pour installer les dépendances nécessaires.
 
-## En développement
+### En développement
 
 Lancer la commande `npm start` pour démarrer le serveur de développement.
 
-## En production
+### En production
 
 Lancer la commande `npm run build` afin de créer les fichiers de sortie.
 
@@ -65,12 +65,7 @@ module.exports = {
 Le port peut être modifié dans le fichier `webpack.config.js`
 
 ```javascript
-module.exports = {
-    // ...
     devServer: {
-        historyApiFallback: true,
-        port: 3000,
+        port: <port-number>,
     },
-    // ...
-}
 ```
