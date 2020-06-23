@@ -14,12 +14,21 @@ react-boilerplate nécessite **Node.js** et **npm** (ou yarn) afin de fonctionne
 
 ## How to use
 
+### With npx
+
+See [https://github.com/vcarrara/create-react-boilerplate](https://github.com/vcarrara/create-react-boilerplate)
+```
+npx github:vcarrara/create-react-boilerplate [directory]
+```
+
+### With git
+
 ```
 git clone https://github.com/vcarrara/react-boilerplate.git <my-package-name>
 cd <my-package-name>
 ```
 
-### Changement de remote
+#### Changement de remote (optionnel)
 
 ```
 git remote rename origin react-boilerplate
