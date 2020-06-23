@@ -1,5 +1,5 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -37,11 +37,14 @@ module.exports = {
             },
         ],
     },
+    performance: {
+        hints: false,
+    },
     resolve: {
         extensions: ['.js', '.jsx'],
     },
     optimization: {
-        minimizer: [new UglifyJsPlugin()],
+        minimizer: [new TerserPlugin()],
     },
     plugins: [
         new HtmlWebPackPlugin({
