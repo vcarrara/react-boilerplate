@@ -1,6 +1,8 @@
 # Introduction
 
 [![Build Status](https://travis-ci.org/vcarrara/react-boilerplate.svg?branch=master)](https://travis-ci.org/vcarrara/react-boilerplate)
+[![dependencies Status](https://david-dm.org/vcarrara/react-boilerplate/status.svg)](https://david-dm.org/vcarrara/react-boilerplate)
+[![devDependencies Status](https://david-dm.org/vcarrara/react-boilerplate/dev-status.svg)](https://david-dm.org/vcarrara/react-boilerplate?type=dev)
 
 react-boilerplate comporte l'essentiel pour démarrer un projet web **React**. Il s'agit d'une alternative basique à create-react-app qui laisse une part plus importante à la simplicité.
 react-boilerplate utilise Webpack, Babel et PostCSS. Il fournit un support pour les fichiers **html**, **js**, **jsx**, **css** et bien d'autres.
