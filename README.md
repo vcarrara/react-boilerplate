@@ -14,7 +14,7 @@ react-boilerplate nécessite **Node.js** et **npm** (ou yarn) afin de fonctionne
 
 ## How to use
 
-### With npx
+### With npx (recommended)
 
 See [https://github.com/vcarrara/create-react-boilerplate](https://github.com/vcarrara/create-react-boilerplate)
 ```
