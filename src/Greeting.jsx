@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 class Greeting extends Component {
     render() {
@@ -10,11 +9,6 @@ class Greeting extends Component {
             </h1>
         )
     }
-}
-
-Greeting.propTypes = {
-    firstName: PropTypes.string.isRequired,
-    lastName: PropTypes.string.isRequired,
 }
 
 export default Greeting
