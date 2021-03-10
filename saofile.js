@@ -2,8 +2,12 @@ module.exports = {
     actions: function () {
         return [
             {
-                type: 'add',
-                files: '**',
+                type: 'remove',
+                files: '.travis.yml',
+            },
+            {
+                type: 'remove',
+                files: 'saofile.js',
             },
         ]
     },
