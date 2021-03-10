@@ -5,16 +5,22 @@
 [![dependencies Status](https://david-dm.org/vcarrara/react-boilerplate/status.svg)](https://david-dm.org/vcarrara/react-boilerplate)
 [![devDependencies Status](https://david-dm.org/vcarrara/react-boilerplate/dev-status.svg)](https://david-dm.org/vcarrara/react-boilerplate?type=dev)
 
-react-boilerplate comporte l'essentiel pour démarrer un projet web **React**. Il s'agit d'une alternative basique à create-react-app qui laisse une part plus importante à la simplicité.
-react-boilerplate utilise Webpack, Babel et PostCSS. Il fournit un support pour les fichiers **html**, **js**, **jsx**, **css** et bien d'autres.
+react-boilerplate is a **React** starter pack. It is a simple alternative to create-react-app. react-boilerplate uses Webpack, Babel and PostCSS. Il has support for many formats **html**, **js**, **jsx**, **css** and others.
 
-# Getting started
+# :rocket: Getting started
 
-react-boilerplate nécessite **Node.js** et **npm** (ou yarn) afin de fonctionner. Les fichiers sources sont situés dans le dossier **src** et le dossier de build dans le dossier **dist** par défaut.
+react-boilerplate needs **Node.js** and **npm** (or yarn) to work. Source files are located in the **src** directory and the build files in **dist** by default.
 
 ## How to use
 
-### With npx (recommended)
+### With sao (recommended)
+
+```
+npm install -g sao
+sao vcarrara/react-boilerplate [directory]
+```
+
+### With npx
 
 See [https://github.com/vcarrara/create-react-boilerplate](https://github.com/vcarrara/create-react-boilerplate)
 ```
@@ -28,7 +34,7 @@ git clone https://github.com/vcarrara/react-boilerplate.git <my-package-name>
 cd <my-package-name>
 ```
 
-#### Changement de remote (optionnel)
+#### Update remote (optional)
 
 ```
 git remote rename origin react-boilerplate
@@ -39,41 +45,40 @@ ou
 git remote set-url origin <repo>
 ```
 
-## Installation des dépendances.
+## Install dependencies
 
-Lancer la commande `npm install` pour installer les dépendances nécessaires.
+Run `npm install` to install required dependencies.
 
-### En développement
+### Development
 
-Lancer la commande `npm start` pour démarrer le serveur de développement.
+Run `npm start` to start the development server.
 
-### En production
+### Production
 
-Lancer la commande `npm run build` afin de créer les fichiers de sortie.
+Run `npm run build` to build output files.
 
 # Paramétrage
 
-## Modification des fichiers d'entrée et de sortie
+## Setting up entry and ouput
 
-Par défaut, le fichier de sortie est appelé `react-boilerplate` et est localisé dans le dossier `dist/`. Ces paramètres peuvent être modifiés dans le fichier `webpack.config.js`.
+By default, output file is named `react-boilerplate` and is located in `dist/`. These parameters can be updated in file `webpack.config.js`.
 
 ```javascript
 module.exports = {
     entry: {
-        // '<nom du fichier de sortie>': '<chemin vers le fichier d'entrée>'
+        // '<output file>': '<entry file path>'
         'react-boilerplate': './src/index.js',
     },
     output: {
         filename: '[name].js',
         path: `${__dirname}/dist`,
     },
-    // ...
 }
 ```
 
-## Modification du port du serveur de développement
+## Setting up development server port
 
-Le port peut être modifié dans le fichier `webpack.config.js`
+Port can be updated in file `webpack.config.js`
 
 ```javascript
     devServer: {
